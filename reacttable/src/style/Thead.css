@@ -1,0 +1,40 @@
+.table-title {
+  width: 100vw;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: space-between;
+  padding: 0 2vw;
+  font-size:larger;
+}
+.titles-Id{
+    width:4vw;
+}
+.titles-Name {
+    width: 14vw;
+
+}
+.titles-Username{
+    width:14vw;
+
+}
+.titles-Email{
+    width: 18vw;
+}
+.titles-City{
+    width:12vw;
+
+}
+.titles-Suite{
+    width:10vw;
+
+}
+.titles-Zipcode {
+    width:12vw;
+
+}
+.titles-Action {
+    width:12vw;
+
+}

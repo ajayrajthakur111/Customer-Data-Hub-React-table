@@ -1,0 +1,45 @@
+.deleteCard {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: #f3f0f0;
+  width: 400px;
+  height: 250px;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  color: #004;
+  padding: 15px;
+}
+.delete-icon-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.delete-confirmation {
+  font-weight: 600;
+}
+
+.delete-yes-no {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.delete-cancel{
+    font-size: large;
+    font-weight: 600;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+}
+.delete-yes-no .Delete {
+  color: white;
+  background-color: rgb(222, 53, 53);
+}
+.delete-yes-no .Cancel {
+  
+  color: black;
+  background-color: #fff;
+}

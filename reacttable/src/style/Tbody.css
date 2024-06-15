@@ -1,0 +1,42 @@
+.tableData {
+  width: 100vw;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 2vw;
+}
+
+.tableData td {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: normal;
+}
+.tbody tr:nth-child(even) {
+  background-color: #f7f6fe;
+}
+
+.id {
+  width: 4vw;
+}
+.name {
+  width: 14vw;
+}
+.username {
+  width: 14vw;
+}
+.email {
+  width: 18vw;
+}
+.city-address {
+  width: 12vw;
+}
+.suite-address {
+  width: 10vw;
+}
+.zipcode-address {
+  width: 12vw;
+}
+.action-data {
+  width: 12vw;
+}
