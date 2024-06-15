@@ -1,5 +1,5 @@
-import React, { useContext,useEffect, useState } from "react";
-import { useLocation, useNavigate } from 'react-router-dom';
+import React, { useContext, useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import { PropContext } from "../App";
 import "../style/Edit.css";
 const Edit = () => {
@@ -10,10 +10,10 @@ const Edit = () => {
   const id = location.state.index;
 
   useEffect(() => {
-    if (id === undefined || data[id] === undefined) {
-      navigate('/');
+    if (id === undefined) {
+      navigate("/");
     } else {
-      setFormData(data.find(item => item.id === id) || {});
+      setFormData(data.find((item) => item.id === id) || {});
     }
   }, [id, data, navigate]);
 
@@ -34,28 +34,31 @@ const Edit = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(`https://react-table-backend.onrender.com/data/${id}`, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(formData)
-      });
+      const response = await fetch(
+        `https://react-table-backend.onrender.com/data/${id}`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
       if (response.ok) {
         const updatedData = [...data];
         updatedData[id] = formData;
         setData(updatedData);
-        navigate('/');
+        navigate("/");
       } else {
-        console.error('Error updating data');
+        console.error("Error updating data");
       }
     } catch (error) {
-      console.error('Error:', error);
+      console.error("Error:", error);
     }
   };
 
   const handleHome = () => {
-    navigate('/');
+    navigate("/");
   };
 
   return (
