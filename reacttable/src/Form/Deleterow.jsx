@@ -10,11 +10,11 @@ const Deleterow = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const id = location.state.index;
-  console.log("stateInex", id);
+  // console.log("stateInex", id);
 
   const handleDelete = async () => {
     try {
-      console.log(id);
+      // console.log(id);
       const response = await fetch(`https://react-table-backend.onrender.com/data/${id}`, {
         method: "DELETE",
       });

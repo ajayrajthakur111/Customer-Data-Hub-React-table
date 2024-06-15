@@ -64,7 +64,6 @@ const Addcustomer = () => {
       console.error("Error:", error);
     }
   };
-
   const handleHome = () => {
     navigate("/");
   };

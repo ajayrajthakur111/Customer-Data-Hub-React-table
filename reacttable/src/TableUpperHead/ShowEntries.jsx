@@ -9,7 +9,7 @@ const ShowEntries = () => {
   };
   useEffect(() => {
     const filteredEntryData = data.slice(0, entries);
-    console.log("filteredEntryData", filteredEntryData);
+    // console.log("filteredEntryData", filteredEntryData);
     setLocalData(filteredEntryData);
     setFilterData(filteredEntryData);
   }, [entries, data, setLocalData, setFilterData]);

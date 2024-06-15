@@ -18,11 +18,11 @@ const Pagination = () => {
   };
   useEffect(() => {
     const startIndex = entries * count;
-    console.log("startIndex", startIndex);
+    // console.log("startIndex", startIndex);
     const paginatedData = data.slice(startIndex, startIndex + entries);
-    console.log(paginatedData);
+    // console.log(paginatedData);
     setLocalData(paginatedData);
-    console.log("Count:", count, "Entries:", entries, "Data Length:", data.length, "Start Index:", startIndex);
+    // console.log("Count:", count, "Entries:", entries, "Data Length:", data.length, "Start Index:", startIndex);
 
   }, [count, data, entries, setLocalData]);
 

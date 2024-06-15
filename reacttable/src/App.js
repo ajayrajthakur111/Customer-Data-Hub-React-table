@@ -19,7 +19,6 @@ function App() {
         "https://react-table-backend.onrender.com/data"
       );
       const data = await response.json();
-      console.log(data);
       setData(data);
       setLocalData(data);
       setFilterData(data)
