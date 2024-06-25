@@ -45,8 +45,9 @@ const Edit = () => {
         }
       );
       if (response.ok) {
-        const updatedData = [...data];
-        updatedData[id] = formData;
+        const updatedData = data.map((item) =>
+          item.id === id ? formData : item
+        );
         setData(updatedData);
         navigate("/");
       } else {
